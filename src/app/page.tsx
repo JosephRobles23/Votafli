@@ -37,8 +37,8 @@ export default function Home() {
           src="/LOGO.png"
           alt="VotaFlix Perú 2026"
           className="navbar-logo"
-          width={140}
-          height={36}
+          width={220}
+          height={52}
           priority
         />
         <div className="navbar-right">
