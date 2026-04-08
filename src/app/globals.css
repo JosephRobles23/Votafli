@@ -32,21 +32,60 @@ body {
 /* ── NAVBAR ──────────────────────────── */
 .navbar {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 48px);
+  max-width: 1200px;
+  height: 64px;
   z-index: 100;
   display: flex;
   align-items: center;
-  padding: 16px 32px;
-  background: rgba(10, 10, 15, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(42, 42, 61, 0.5);
+  justify-content: space-between;
+  padding: 0 28px;
+  background: rgba(140, 140, 140, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 100px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .navbar-logo {
-  height: 40px;
+  height: 36px;
   width: auto;
   object-fit: contain;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-lang, .nav-theme {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.nav-lang:hover, .nav-theme:hover {
+  opacity: 1;
+}
+
+.nav-lang svg, .nav-theme svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
 
 /* ── HERO ─────────────────────────────── */
