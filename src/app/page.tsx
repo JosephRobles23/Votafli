@@ -36,7 +36,7 @@ export default function Home() {
         <nav className="navbar">
           <Image
             src="/LOGO.png"
-            alt="VotaFlix Perú 2026"
+            alt="AKLLAY Perú 2026"
             className="navbar-logo"
             width={220}
             height={52}
@@ -63,7 +63,7 @@ export default function Home() {
         {view === 'hero' && (
           <footer className="footer">
             <p>
-              VotaFlix Perú 2026 · Datos basados en planes de gobierno oficiales del JNE · No tiene afiliación política ·{' '}
+              AKLLAY Perú 2026 · Datos basados en planes de gobierno oficiales del JNE · No tiene afiliación política ·{' '}
               <a href="https://votoinformado.jne.gob.pe" target="_blank" rel="noopener noreferrer">
                 Voto Informado JNE
               </a>

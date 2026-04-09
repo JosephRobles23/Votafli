@@ -298,9 +298,16 @@ body {
   transition: border-color 0.3s, background 0.3s;
 }
 
-.topic-card.rated {
+.topic-card.rated, .clickable-card:hover {
   border-color: var(--accent);
   background: var(--surface2);
+}
+
+.clickable-card {
+  text-align: left;
+  cursor: pointer;
+  width: 100%;
+  color: inherit;
 }
 
 .topic-info { flex: 1; }

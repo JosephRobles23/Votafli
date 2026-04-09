@@ -25,9 +25,9 @@ export default function ResultSection({ userScores, onRestart }: ResultSectionPr
 
   const shareResult = () => {
     if (!winner) return;
-    const text = `🇵🇪 Hice el test de VotaFlix Perú 2026 y tengo ${winner.match}% de compatibilidad con ${winner.name}. ¿Y tú con quién votas? #Peru2026 #VotaFlix`;
+    const text = `🇵🇪 Hice el test de conformacion AKLLAY Perú 2026 y tengo ${winner.match}% de compatibilidad con ${winner.name}. ¿Y tú con quién votas? #Peru2026 #AKLLAY`;
     if (typeof window !== 'undefined' && navigator.share) {
-      navigator.share({ title: 'VotaFlix Perú 2026', text });
+      navigator.share({ title: 'AKLLAY Perú 2026', text });
     } else {
       navigator.clipboard.writeText(text).then(() => showToast('¡Texto copiado al portapapeles! 📋'));
     }
@@ -120,7 +120,7 @@ export default function ResultSection({ userScores, onRestart }: ResultSectionPr
       {/* FOOTER */}
       <footer className="footer">
         <p>
-          VotaFlix Perú 2026 · Datos basados en planes de gobierno oficiales del JNE · No tiene afiliación política ·{' '}
+          AKLLAY Perú 2026 · Datos basados en planes de gobierno oficiales del JNE · No tiene afiliación política ·{' '}
           <a href="https://votoinformado.jne.gob.pe" target="_blank" rel="noopener noreferrer">
             Voto Informado JNE
           </a>
